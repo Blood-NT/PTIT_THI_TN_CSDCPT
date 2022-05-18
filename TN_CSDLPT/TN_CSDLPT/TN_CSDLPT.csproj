@@ -40,6 +40,10 @@
     <Reference Include="DevExpress.XtraBars.v16.1" />
     <Reference Include="DevExpress.Sparkline.v16.1.Core" />
     <Reference Include="DevExpress.XtraEditors.v16.1" />
+    <Reference Include="DevExpress.XtraGrid.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Core, Version=16.1.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -64,6 +68,48 @@
     <Compile Include="form\frmDangnhap.Designer.cs">
       <DependentUpon>frmDangnhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="form\frm_add_gv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frm_add_gv.Designer.cs">
+      <DependentUpon>frm_add_gv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frm_add_khoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frm_add_khoa.Designer.cs">
+      <DependentUpon>frm_add_khoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frm_add_lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frm_add_lop.Designer.cs">
+      <DependentUpon>frm_add_lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frm_add_monhoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frm_add_monhoc.Designer.cs">
+      <DependentUpon>frm_add_monhoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frm_add_QA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frm_add_QA.Designer.cs">
+      <DependentUpon>frm_add_QA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frm_add_sv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frm_add_sv.Designer.cs">
+      <DependentUpon>frm_add_sv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frm_gv_dk_thi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frm_gv_dk_thi.Designer.cs">
+      <DependentUpon>frm_gv_dk_thi.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\frm_svlogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +123,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form\frmDangnhap.resx">
       <DependentUpon>frmDangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frm_add_gv.resx">
+      <DependentUpon>frm_add_gv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frm_add_khoa.resx">
+      <DependentUpon>frm_add_khoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frm_add_lop.resx">
+      <DependentUpon>frm_add_lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frm_add_monhoc.resx">
+      <DependentUpon>frm_add_monhoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frm_add_QA.resx">
+      <DependentUpon>frm_add_QA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frm_add_sv.resx">
+      <DependentUpon>frm_add_sv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frm_gv_dk_thi.resx">
+      <DependentUpon>frm_gv_dk_thi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\frm_svlogin.resx">
       <DependentUpon>frm_svlogin.cs</DependentUpon>

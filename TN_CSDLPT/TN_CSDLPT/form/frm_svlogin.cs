@@ -22,5 +22,10 @@ namespace TN_CSDLPT.form
         {
 
         }
+
+        private void textEdit2_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

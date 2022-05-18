@@ -28,26 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.sinhvien_or_giangvien = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(428, 96);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(227, 21);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -87,20 +76,6 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Password";
             // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(428, 139);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(227, 20);
-            this.textEdit1.TabIndex = 11;
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(428, 187);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(227, 20);
-            this.textEdit2.TabIndex = 12;
-            // 
             // sinhvien_or_giangvien
             // 
             this.sinhvien_or_giangvien.AutoSize = true;
@@ -111,37 +86,59 @@
             this.sinhvien_or_giangvien.Text = "Giáo Viên Đăng Nhập";
             this.sinhvien_or_giangvien.Click += new System.EventHandler(this.sinhvien_or_giangvien_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(428, 96);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(227, 21);
+            this.comboBox1.TabIndex = 23;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(428, 134);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(226, 21);
+            this.textBox1.TabIndex = 24;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(428, 190);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '1';
+            this.textBox2.Size = new System.Drawing.Size(227, 21);
+            this.textBox2.TabIndex = 25;
+            this.textBox2.UseWaitCursor = true;
+            // 
             // frmDangnhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(978, 508);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.sinhvien_or_giangvien);
-            this.Controls.Add(this.textEdit2);
-            this.Controls.Add(this.textEdit1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Name = "frmDangnhap";
             this.Text = "frmDangnhap";
             this.Load += new System.EventHandler(this.frmDangnhap_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
         private System.Windows.Forms.Label sinhvien_or_giangvien;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
