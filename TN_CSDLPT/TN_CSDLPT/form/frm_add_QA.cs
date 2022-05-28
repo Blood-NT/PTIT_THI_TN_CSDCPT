@@ -22,9 +22,15 @@ namespace TN_CSDLPT.form
 
       
 
-        private void button2_Click(object sender, EventArgs e)
+       
+
+        private void frm_add_QA_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
             if (check_add == true)
             {
                 DialogResult dr = MessageBox.Show("Bạn có chắc muốn thoát chương trình", "check", MessageBoxButtons.YesNo);
@@ -41,11 +47,6 @@ namespace TN_CSDLPT.form
                 MessageBox.Show(notifi, "noteeeeeeeeeee");
 
             }
-        }
-
-        private void frm_add_QA_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

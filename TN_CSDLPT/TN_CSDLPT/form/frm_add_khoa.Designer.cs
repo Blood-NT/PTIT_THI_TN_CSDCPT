@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_add_khoa));
-            this.button2 = new System.Windows.Forms.Button();
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
             this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label6 = new System.Windows.Forms.Label();
@@ -54,16 +53,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(465, 381);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Thêm";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textEdit5
             // 
@@ -158,6 +147,7 @@
             this.barButtonItem1.Id = 0;
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.Size = new System.Drawing.Size(150, 0);
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // barButtonItem2
             // 
@@ -239,7 +229,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textEdit1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.textEdit5);
             this.Controls.Add(this.comboBoxEdit2);
             this.Controls.Add(this.label6);
@@ -260,8 +249,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button2;
         private DevExpress.XtraEditors.TextEdit textEdit5;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
         private System.Windows.Forms.Label label6;

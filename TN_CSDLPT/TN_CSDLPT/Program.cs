@@ -4,14 +4,19 @@ using System.Linq;
 using System.Windows.Forms;
 using DevExpress.UserSkins;
 using DevExpress.Skins;
+using System.Data.SqlClient;
+using TN_CSDLPT.form;
+using System.Data;
 
 namespace TN_CSDLPT
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+
+
+        public static bool sinhvien = false;
+        public static bool giangvien = false;
+        public static frmmain frmmain;
         [STAThread]
         static void Main()
         {
@@ -19,8 +24,8 @@ namespace TN_CSDLPT
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            SkinManager.EnableFormSkins();
-            Application.Run(new frmmain());
+            frmmain = new frmmain();
+            Application.Run(frmmain);
         }
     }
-}
+    }

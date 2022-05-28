@@ -48,9 +48,9 @@
             this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
             this.pageHethong = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.gropu_he_thong = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.pageThi = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.pageGV = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.group_GV = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.pageThi = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.group_gv_dk_thi = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.group_sv_thi = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.group_Add_Thi = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -87,8 +87,8 @@
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.pageHethong,
-            this.pageThi,
-            this.ribbonPage1});
+            this.pageGV,
+            this.pageThi});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl1.Size = new System.Drawing.Size(1229, 143);
             this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
@@ -195,12 +195,12 @@
             this.gropu_he_thong.Name = "gropu_he_thong";
             this.gropu_he_thong.ShowCaptionButton = false;
             // 
-            // pageThi
+            // pageGV
             // 
-            this.pageThi.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.pageGV.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.group_GV});
-            this.pageThi.Name = "pageThi";
-            this.pageThi.Text = "Giáo Viên";
+            this.pageGV.Name = "pageGV";
+            this.pageGV.Text = "Giáo Viên";
             // 
             // group_GV
             // 
@@ -214,14 +214,14 @@
             this.group_GV.ShowCaptionButton = false;
             this.group_GV.Text = " ";
             // 
-            // ribbonPage1
+            // pageThi
             // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.pageThi.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.group_gv_dk_thi,
             this.group_sv_thi,
             this.group_Add_Thi});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "THI";
+            this.pageThi.Name = "pageThi";
+            this.pageThi.Text = "THI";
             // 
             // group_gv_dk_thi
             // 
@@ -295,10 +295,10 @@
         private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
         private DevExpress.XtraBars.Ribbon.RibbonPage pageHethong;
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private DevExpress.XtraBars.Ribbon.RibbonPage pageThi;
+        private DevExpress.XtraBars.Ribbon.RibbonPage pageGV;
         private DevExpress.XtraBars.Docking2010.DocumentManager documentManager1;
         private DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView tabbedView1;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage pageThi;
         private DevExpress.XtraBars.Ribbon.RibbonMiniToolbar ribbonMiniToolbar1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup group_GV;
         private DevExpress.XtraBars.BarButtonItem btn_QL_GV;

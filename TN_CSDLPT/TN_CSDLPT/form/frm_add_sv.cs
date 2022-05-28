@@ -18,9 +18,6 @@ namespace TN_CSDLPT.form
             InitializeComponent();
         }
 
-        private void add_ok_Click(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

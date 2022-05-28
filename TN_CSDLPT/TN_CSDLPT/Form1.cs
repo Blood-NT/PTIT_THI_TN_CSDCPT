@@ -12,8 +12,6 @@ namespace TN_CSDLPT
    
     public partial class frmmain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        bool sinhvien = false;
-        bool giangvien = false;
 
 
         void OpenForm(Type typeForm)
@@ -34,7 +32,16 @@ namespace TN_CSDLPT
         {
             InitializeComponent();
         }
-
+        void close_all_frm(Type typeForm)
+        {
+            foreach (Form frm in MdiChildren)
+            {
+                if (frm.GetType() != typeForm)
+                {
+                    frm.Close();
+                }
+            }
+        }
   
 
         private void ribbonControl1_Click(object sender, EventArgs e)
@@ -42,32 +49,45 @@ namespace TN_CSDLPT
 
         }
 
-    
 
 
         private void frmmain_Load(object sender, EventArgs e)
         {
+            pageGV.Visible = false;
+            pageThi.Visible = false;
 
         }
 
         private void btn_SV_Login_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            sinhvien = true;
-            giangvien = false;
-            foreach (Form frm in MdiChildren)
-            {
-                if (frm.GetType() == typeof(form.frmDangnhap))
-                {
-                    frm.Close();
-                }
-            }
+            pageGV.Visible = false;
+            pageThi.Visible = true;
+
+
+            group_sv_thi.Visible = true;
+            group_gv_dk_thi.Visible = false;
+            group_Add_Thi.Visible = false;
+
+            Program.sinhvien = true;
+            Program.giangvien = false;
+
+            
+            close_all_frm(typeof(form.frm_svlogin));
             OpenForm(typeof(form.frm_svlogin));
         }
 
         private void btn_GV_Login_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            sinhvien = false;
-            giangvien = true;
+            Program.sinhvien = false;
+            Program.giangvien = true;
+
+            pageThi.Visible = true;
+            pageGV.Visible = true;
+
+            group_sv_thi.Visible = false;
+            group_gv_dk_thi.Visible = true;
+            group_Add_Thi.Visible = true;
+
             foreach (Form frm in MdiChildren)
             {
                 if (frm.GetType() == typeof(form.frm_svlogin))
@@ -75,6 +95,7 @@ namespace TN_CSDLPT
                     frm.Close();
                 }
             }
+            close_all_frm(typeof(form.frmDangnhap));
             OpenForm(typeof(form.frmDangnhap));
         }
 

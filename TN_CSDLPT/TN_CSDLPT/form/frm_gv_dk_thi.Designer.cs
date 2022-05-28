@@ -42,7 +42,6 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -178,15 +177,6 @@
             this.label2.TabIndex = 35;
             this.label2.Text = "Mã Lớp";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(600, 432);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 32;
-            this.button2.Text = "Thêm";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // comboBoxEdit2
             // 
             this.comboBoxEdit2.Location = new System.Drawing.Point(776, 295);
@@ -320,7 +310,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBoxEdit1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBoxEdit2);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
@@ -359,7 +348,6 @@
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.NumericUpDown numericUpDown3;

@@ -44,7 +44,6 @@
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
             this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
@@ -95,6 +94,7 @@
             this.barButtonItem1.Id = 0;
             this.barButtonItem1.Name = "barButtonItem1";
             this.barButtonItem1.Size = new System.Drawing.Size(150, 0);
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
             // 
             // barButtonItem2
             // 
@@ -184,16 +184,6 @@
             this.label1.TabIndex = 40;
             this.label1.Text = "Mã  Môn Học";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(564, 385);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 39;
-            this.button2.Text = "Thêm";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // textEdit5
             // 
             this.textEdit5.Location = new System.Drawing.Point(740, 234);
@@ -217,7 +207,6 @@
             this.ClientSize = new System.Drawing.Size(1313, 563);
             this.Controls.Add(this.textEdit1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.textEdit5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.barDockControlLeft);
@@ -250,7 +239,6 @@
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
         private DevExpress.XtraEditors.TextEdit textEdit5;
         private System.Windows.Forms.Label label6;
     }

@@ -52,7 +52,6 @@
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.button2 = new System.Windows.Forms.Button();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar4 = new DevExpress.XtraBars.Bar();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
@@ -119,8 +118,8 @@
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1264, 0);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 551);
+            this.barDockControlRight.Location = new System.Drawing.Point(1264, 40);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 511);
             // 
             // label1
             // 
@@ -266,16 +265,6 @@
             this.textEdit5.Size = new System.Drawing.Size(100, 20);
             this.textEdit5.TabIndex = 18;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(450, 458);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Thêm";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // barManager1
             // 
             this.barManager1.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
@@ -317,6 +306,7 @@
             this.barButtonItem6.Id = 0;
             this.barButtonItem6.Name = "barButtonItem6";
             this.barButtonItem6.Size = new System.Drawing.Size(150, 0);
+            this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
             // 
             // barButtonItem7
             // 
@@ -383,11 +373,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 551);
-            this.Controls.Add(this.barDockControlLeft);
-            this.Controls.Add(this.barDockControl1);
-            this.Controls.Add(this.barDockControlBottom);
-            this.Controls.Add(this.barDockControlTop);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.textEdit5);
             this.Controls.Add(this.textEdit4);
             this.Controls.Add(this.textEdit3);
@@ -405,6 +390,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.barDockControlRight);
+            this.Controls.Add(this.barDockControlLeft);
+            this.Controls.Add(this.barDockControl1);
+            this.Controls.Add(this.barDockControlBottom);
+            this.Controls.Add(this.barDockControlTop);
             this.Name = "frm_add_QA";
             this.Text = "frm_add_QA";
             this.Load += new System.EventHandler(this.frm_add_QA_Load);
@@ -446,7 +435,6 @@
         private DevExpress.XtraEditors.TextEdit textEdit3;
         private DevExpress.XtraEditors.TextEdit textEdit4;
         private DevExpress.XtraEditors.TextEdit textEdit5;
-        private System.Windows.Forms.Button button2;
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar4;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;

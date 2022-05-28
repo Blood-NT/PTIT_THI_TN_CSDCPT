@@ -20,8 +20,16 @@ namespace TN_CSDLPT.form
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+     
+
+        private void frm_add_khoa_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
             check_add_khoa = !check_add_khoa;
             if (check_add_khoa == true)
             {
@@ -39,11 +47,6 @@ namespace TN_CSDLPT.form
                 MessageBox.Show(notifi, "noteeeeeeeeeee");
 
             }
-        }
-
-        private void frm_add_khoa_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

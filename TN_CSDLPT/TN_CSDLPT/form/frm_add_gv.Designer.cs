@@ -48,7 +48,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
             this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label6 = new System.Windows.Forms.Label();
@@ -219,16 +218,6 @@
             this.label1.TabIndex = 64;
             this.label1.Text = "Tên";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(559, 405);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 63;
-            this.button2.Text = "Thêm";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // textEdit5
             // 
             this.textEdit5.Location = new System.Drawing.Point(735, 254);
@@ -266,7 +255,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.textEdit5);
             this.Controls.Add(this.comboBoxEdit2);
             this.Controls.Add(this.label6);
@@ -307,7 +295,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
         private DevExpress.XtraEditors.TextEdit textEdit5;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
         private System.Windows.Forms.Label label6;

@@ -52,7 +52,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.add_ok = new System.Windows.Forms.Button();
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
             this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.label6 = new System.Windows.Forms.Label();
@@ -264,16 +263,6 @@
             this.label1.TabIndex = 64;
             this.label1.Text = "Tên";
             // 
-            // add_ok
-            // 
-            this.add_ok.Location = new System.Drawing.Point(577, 408);
-            this.add_ok.Name = "add_ok";
-            this.add_ok.Size = new System.Drawing.Size(75, 23);
-            this.add_ok.TabIndex = 63;
-            this.add_ok.Text = "Thêm";
-            this.add_ok.UseVisualStyleBackColor = true;
-            this.add_ok.Click += new System.EventHandler(this.add_ok_Click);
-            // 
             // textEdit5
             // 
             this.textEdit5.Location = new System.Drawing.Point(753, 257);
@@ -315,7 +304,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.add_ok);
             this.Controls.Add(this.textEdit5);
             this.Controls.Add(this.comboBoxEdit2);
             this.Controls.Add(this.label6);
@@ -363,7 +351,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button add_ok;
         private DevExpress.XtraEditors.TextEdit textEdit5;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
         private System.Windows.Forms.Label label6;
